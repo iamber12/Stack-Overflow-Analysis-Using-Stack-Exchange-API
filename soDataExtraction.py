@@ -4,6 +4,7 @@ import csv
 SITE = StackAPI('stackoverflow')
 
 # fetch data having tags 'R' and '.net' from 1 June 2021 to 1 Dec 2021
+# 'filter' created manually from - https://api.stackexchange.com/docs/search
 dotnetTagSearch = SITE.fetch('search', fromdate=1622505600, todate=1638316800, tagged='.net', filter='!)RhXbHRkB6_tPu7aa2kYKD8y')
 rTagSearch = SITE.fetch('search', fromdate=1622505600, todate=1638316800, tagged='r', filter='!)RhXbHRkB6_tPu7aa2kYKD8y')
 dotnetTagData = []
