@@ -10,8 +10,8 @@
 
 **Files and Folders -**
 
-- **soDataExtraction.py -** used to extract the data from stackoverflow and generate a csv.
-- **soVisualization.py -** used to generate plots using the csv generated.
+- **soDataExtraction.py -** used to extract the data from stackoverflow and generate csv files.
+- **soVisualization.py -** used to generate plots using the csv files generated.
 - **plots -** contains png file of all the plots generated.
 
 **PART 1**  **- PLOTS TO UNDERSTAND**  **DIFFERENCES IN DISTRIBUTION OF THE 5 METRICS BETWEEN THE POSTS OF THE TWO TAGS**
