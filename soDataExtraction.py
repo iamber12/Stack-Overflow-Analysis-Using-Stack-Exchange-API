@@ -26,8 +26,8 @@ for data in rTagSearch['items']:
     rTagData.append([data['question_id'],data['view_count'],data['is_answered'],data['answer_count'],data['score'], ownerReputation])
 
 # filenames
-dot_net = "C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/dotNetTagData.csv"
-r = "C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/rTagData.csv"
+dot_net = "./dotNetTagData.csv"
+r = "./rTagData.csv"
 
 # generating csv
 with open(dot_net, 'w', encoding='UTF8', newline='') as fileToWrite: 
