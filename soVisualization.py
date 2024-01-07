@@ -4,8 +4,8 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 
 # reading data from csv
-dot_net = pd.read_csv('C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/dotNetTagData.csv')
-r = pd.read_csv('C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/rTagData.csv')
+dot_net = pd.read_csv('./dotNetTagData.csv')
+r = pd.read_csv('./rTagData.csv')
 
 # adding another column with static value in order to differentiate data related to different tags
 dot_net['tag'] = 'Dot Net'
@@ -48,13 +48,13 @@ vis6= sns.swarmplot(x="tag",y="Answer Count",hue="Is Answered",data=merge_df).se
 
 
 # saving above plots as png
-vis1.savefig('C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/plots/is_answered.png')
-vis2.savefig('C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/plots/view_count.png')
-vis3.savefig('C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/plots/answer_count.png')
-vis4plt.savefig('C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/plots/score.png')
-vis5_1plt.savefig('C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/plots/reputation_1.png')
-vis5_2.savefig('C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/plots/reputation_2.png')
-vis6plt.savefig('C:/Users/verma/AppData/Local/GitHubDesktop/app-2.9.6/soProject/stackOverflowAnalysis/plots/additional.png')
+vis1.savefig('./plots/is_answered.png')
+vis2.savefig('./plots/view_count.png')
+vis3.savefig('./plots/answer_count.png')
+vis4plt.savefig('./plots/score.png')
+vis5_1plt.savefig('./plots/reputation_1.png')
+vis5_2.savefig('./plots/reputation_2.png')
+vis6plt.savefig('./plots/additional.png')
 
 
 # In[ ]:
